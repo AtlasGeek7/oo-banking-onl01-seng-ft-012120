@@ -3,10 +3,10 @@ class Transfer
   attr_accessor :status
 
   def initialize(sender, receiver, amount)
-    @status = "pending"
-    @sender = sender
-    @receiver = receiver
     @amount = amount
+    @status = "pending"
+    @receiver = receiver
+    @sender = sender
   end
 
   def valid?
